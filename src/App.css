@@ -1,0 +1,69 @@
+.header{
+  display: flex;
+  justify-content: center;
+  gap:50rem;
+}
+.headerbutton{
+  padding-top: 2rem;
+}
+.App-logo{
+  width:10rem;
+  height:5rem;
+}
+.main_layout{
+  margin-left:1rem ;
+  margin-top: 1rem;
+  margin-right:1rem ;
+  background-color: whitesmoke;
+   border:2px solid black;
+   border-radius: 1rem;
+   opacity: 0.8;
+  
+}
+
+.tabledesign{
+ padding-left: 5rem;
+}
+table {
+  border-spacing: 20px;
+}
+th, td {
+  padding-top:10px;
+  padding-left: 20px;
+  padding-right: 10px;
+  word-break: break-all;
+  
+}
+
+.addbutton{
+  font-family: Montserrat, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    padding: 9px 17px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 11px 0 rgba(146, 96, 0, 0.35);
+}
+.editbtn{
+  margin-left: 20px;
+}
+.editbtn, .deletebtn, .submitbtn , .updatebtn{
+  
+  font-family: Montserrat, sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    padding: 9px 17px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 11px 0 rgba(146, 96, 0, 0.35);
+
+  
+}
+.editbtn:hover, .deletebtn:hover, .addbutton:hover,.submitbtn:hover , .updatebtn:hover{
+  color: white;
+  background-color: black;
+  border-color: white;
+
+}
