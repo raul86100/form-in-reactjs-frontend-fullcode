@@ -2,11 +2,15 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import Popup from "./component/Popup";
 
 
 
 function Fetchtable() {
     const [rec, setRec] = useState([]);
+
+    const [calldel,setCalldel]=useState(false);
+    const [delkey,setDelkey]=useState(" ");
     
     const fetch = () => {
         axios.get('http://localhost:5050/api/call/userinfo/')
@@ -15,21 +19,26 @@ function Fetchtable() {
     }
     useEffect(() => {
         fetch();
-    }, [])
+    }, [!calldel])
+
+    const delmap=(key)=>{
+        setCalldel(true);
+        setDelkey(key); 
+    }
     function del(email) {
-        window.confirm("delete the record");
+        
         const url = 'http://localhost:5050/api/call/userinfo/delete/' + email;
         console.log(url);
         axios.delete(url)
             .then(res => console.log("deleted"))
             .catch(error => console.log(error));
-    fetch();
+        
     }
 
 
     return (
        
-        
+       <div> 
        
         <div className='tabledesign'>
             
@@ -56,7 +65,7 @@ function Fetchtable() {
                                 <td>{user.dob}</td>
                                 <td>{user.address}</td>
                                 <td>
-                                    <button onClick={(e) => { del(user.email); }} className='deletebtn' >Delete</button>
+                                    <button onClick={() => {delmap(user.email)}} className='deletebtn' >Delete</button>
                                     <Link to='/Edit' state={{ obj:{user} }}><button className='editbtn' >Edit</button></Link>
                                 </td>
                             </tr>
@@ -65,9 +74,27 @@ function Fetchtable() {
                     }
                 </tbody>
             </table>
+            
            
         </div>
+
+<div >
+{calldel && (<Popup
+closeoption={() => {
+setCalldel(false);
+}}
+checkcall={() => {
+
+setCalldel(false);            
+del(delkey);
+}}
+message={"Do you want to delete"}
+ className="delpop"/>)}
+
+</div>
+</div>
        
     )
 }
 export default Fetchtable;
+

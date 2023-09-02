@@ -231,7 +231,7 @@ const validateaddress=()=>{
                     onChange={(e) => {
                       setEmail(e.target.value);
                     }}
-                  />
+                  required/>
                   <div>
                     {cemail.condition && (
                       <p className="erroremail">{cemail.message}</p>
@@ -304,7 +304,7 @@ const validateaddress=()=>{
                     }}
                   required/>
                 </div>
-                <div className="textarea">
+                <div >
                   <textarea
                     type="text"
                     maxLength="50"
@@ -313,12 +313,12 @@ const validateaddress=()=>{
                     onChange={(e) => {
                       setAddress(e.target.value);
                     }}
-                  required/>
+                    placeholder="Max50charactor" required/>
                 </div>
               </div>
             </div>
             <div className="dsubmit">
-              <input type="submit" className="submitbtn" />
+              <input type="submit" className="submitbtn"  disabled={pop}/>
             </div>
             {ferror && <p>fill all field</p>}
           </form>

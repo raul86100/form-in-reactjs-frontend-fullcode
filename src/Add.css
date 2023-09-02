@@ -60,6 +60,13 @@ input[type=number]::-webkit-outer-spin-button {
     appearance: none;
     margin: 0; 
 }
+textarea::placeholder {
+    text-align:right;
+    position:fixed;
+    bottom: 0px;
+    right:4px;
+  }
+  
 .erroremail{
     color:red;
     font-size: xx-small;

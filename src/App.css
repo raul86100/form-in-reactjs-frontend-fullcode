@@ -22,17 +22,20 @@
 }
 
 .tabledesign{
- padding-left: 5rem;
+  padding: 10px;
 }
 table {
-  border-spacing: 20px;
+  border-spacing: 2px;
 }
 th, td {
   padding-top:10px;
-  padding-left: 20px;
+  padding-left: 30px;
   padding-right: 10px;
   word-break: break-all;
   
+}
+td{
+  width:180px;
 }
 
 .addbutton{
@@ -66,4 +69,7 @@ th, td {
   background-color: black;
   border-color: white;
 
+}
+.delpop{
+  margin-top: 0%;
 }
