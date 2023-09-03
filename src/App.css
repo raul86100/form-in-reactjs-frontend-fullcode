@@ -70,6 +70,8 @@ td{
   border-color: white;
 
 }
-.delpop{
-  margin-top: 0%;
+.popdel{
+  position:absolute;
+  margin-top: 10%;
+  margin-left: 25%;
 }

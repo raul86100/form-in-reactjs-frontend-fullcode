@@ -41,6 +41,20 @@ function Fetchtable() {
        <div> 
        
         <div className='tabledesign'>
+        <div className='popdel' >
+{calldel && (<Popup
+closeoption={() => {
+setCalldel(false);
+}}
+checkcall={() => {
+
+setCalldel(false);            
+del(delkey);
+}}
+message={"Do you want to delete"}
+ className="delpop"/>)}
+
+</div>
             
             <table>
                 <thead>
@@ -78,20 +92,7 @@ function Fetchtable() {
            
         </div>
 
-<div >
-{calldel && (<Popup
-closeoption={() => {
-setCalldel(false);
-}}
-checkcall={() => {
 
-setCalldel(false);            
-del(delkey);
-}}
-message={"Do you want to delete"}
- className="delpop"/>)}
-
-</div>
 </div>
        
     )
