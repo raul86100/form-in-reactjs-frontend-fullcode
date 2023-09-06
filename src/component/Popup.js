@@ -2,7 +2,7 @@ import React from "react";
 import "./popup.css";
 
 
-const Popup = ({ closeoption, checkcall, message }) => {
+const   Popup = ({ closeoption, checkcall, message }) => {
 
   return (
     <div className="fullscreen">

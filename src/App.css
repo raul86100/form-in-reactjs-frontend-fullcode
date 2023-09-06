@@ -36,6 +36,7 @@ th, td {
 }
 td{
   width:180px;
+  text-align: center;
 }
 
 .addbutton{
@@ -51,7 +52,7 @@ td{
 .editbtn{
   margin-left: 20px;
 }
-.editbtn, .deletebtn, .submitbtn , .updatebtn{
+.editbtn, .deletebtn,.submitbtn , .updatebtn{
   
   font-family: Montserrat, sans-serif;
     font-size: 9px;
@@ -63,6 +64,23 @@ td{
     box-shadow: 0 4px 11px 0 rgba(146, 96, 0, 0.35);
 
   
+}
+.homeeditbtn{
+  margin-left: 10px;
+}
+.homeeditbtn, .homedeletebtn{
+  font-family: Montserrat, sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  padding: 3px 20px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 11px 0 rgba(146, 96, 0, 0.35);
+  
+}
+.homeeditbtn:hover, .homedeletebtn:hover{
+  background-color: #39cca7;
 }
 .editbtn:hover, .deletebtn:hover, .addbutton:hover,.submitbtn:hover , .updatebtn:hover{
   color: white;

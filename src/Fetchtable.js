@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
 import axios from 'axios';
+
+import './App.css';
 import { Link } from 'react-router-dom';
 import Popup from "./component/Popup";
+import edit from './edit.png';
+import dele from './delete.png';
 
 
 
@@ -79,8 +82,8 @@ message={"Do you want to delete"}
                                 <td>{user.dob}</td>
                                 <td>{user.address}</td>
                                 <td>
-                                    <button onClick={() => {delmap(user.email)}} className='deletebtn' >Delete</button>
-                                    <Link to='/Edit' state={{ obj:{user} }}><button className='editbtn' >Edit</button></Link>
+                                    <Link to='/Add' state={{ editobj:{user} }}><button className='homedeletebtn' ><img src={edit} width="25px" height="25px"/></button></Link>
+                                    <button onClick={() => {delmap(user.email)}} className='homeeditbtn' ><img src={dele} width="25px" height="25px"/></button>
                                 </td>
                             </tr>
                         ))
