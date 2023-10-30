@@ -1,0 +1,119 @@
+.header{
+  display: flex;
+  justify-content:space-between;
+  padding-left: 5rem;
+    padding-right: 6rem;
+}
+.headerbutton{
+  padding-top: 2rem;
+}
+.App-logo{
+  width:6rem;
+  height:5rem;
+}
+.main_layout{
+  margin-left:1rem ;
+  margin-top: 1rem;
+  margin-right:1rem ;
+  margin-bottom: 2rem;
+  background-color: whitesmoke;
+   border:2px solid black;
+   border-radius: 1rem;
+   opacity: 0.8;
+   padding-bottom: 3rem;
+  
+}
+
+.tabledesign{
+  padding: 10px;
+}
+table {
+  border-spacing: 2px;
+}
+th, td {
+  padding-top:10px;
+  padding-left: 30px;
+  padding-right: 10px;
+  word-break: break-all;
+  
+}
+td{
+  width:180px;
+  text-align: center;
+}
+
+.addbutton{
+  font-family: Montserrat, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    padding: 9px 17px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 11px 0 rgba(146, 96, 0, 0.35);
+}
+.editbtn{
+  margin-left: 20px;
+}
+.editbtn, .deletebtn,.submitbtn , .updatebtn{
+  
+  font-family: Montserrat, sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    padding: 9px 17px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 11px 0 rgba(146, 96, 0, 0.35);
+
+  
+}
+.homeeditbtn{
+  margin-left: 10px;
+}
+.homeeditbtn, .homedeletebtn{
+  font-family: Montserrat, sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  padding: 3px 20px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 11px 0 rgba(146, 96, 0, 0.35);
+  
+}
+.homeeditbtn:hover, .homedeletebtn:hover{
+  background-color: #39cca7;
+}
+.editbtn:hover, .deletebtn:hover, .addbutton:hover,.submitbtn:hover , .updatebtn:hover{
+  color: white;
+  background-color: black;
+  border-color: white;
+
+}
+.popdel{
+  position:absolute;
+  margin-top: 10%;
+  margin-left: 25%;
+}
+
+
+.search{
+  font-family: Montserrat, sans-serif;
+border-radius: 20px;
+border:2px solid black;
+width: 50%;
+height: 2rem;
+letter-spacing: 2px;
+box-shadow: 0 4px 11px 0 rgba(146, 96, 0, 0.35);
+text-align: center;
+margin-left:24%;
+margin-top: 3%;
+margin-bottom: 4%;
+}
+
+
+input::placeholder{
+  font-family: Montserrat, sans-serif;
+  letter-spacing: 2px;
+}

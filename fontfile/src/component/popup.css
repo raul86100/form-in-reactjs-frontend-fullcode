@@ -1,0 +1,36 @@
+.fullscreen{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    opacity: 0.9;
+}
+.card_layout{
+    margin-top:-20%;
+    margin-left: 30%;
+    border-radius: 10%;
+   background-color: grey;
+    color: white;
+   position:absolute;
+   padding: 11px;
+}
+.borderdiv{
+    background-color: aliceblue;
+    padding: 4px;
+    border-radius: 22%;
+}
+.inner_card{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 18px;
+    border-radius: 22%;
+}
+.cbtn{
+    display: flex;
+    justify-content: center;
+    gap:20rem;
+}
